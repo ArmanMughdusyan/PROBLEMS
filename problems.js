@@ -1,12 +1,16 @@
-let a = 15;
-let b  = 12;
-let c = 25;
-
-if (a < b) {
-    a = b;
-}
-
-if (a < c){
-    a = c
-} ;
-alert(a);
+let arr = [2, 6, 3, 7, 15, 17] ;
+let arr1 =[];
+let arr2 = [];
+let j = 0;
+let k = 0;
+for (let i = 0; i < arr.length; i++) {
+    if ( (arr[i] % 2 == 0 && arr[i] != 2) || (arr[i] % 3 == 0 && arr[i] != 3)) {
+        arr1[j] = arr[i];
+        j++;
+    } else {
+        arr2[k] = arr[i];
+        k++;
+    }
+};
+console.log(arr1);
+console.log(arr2);
